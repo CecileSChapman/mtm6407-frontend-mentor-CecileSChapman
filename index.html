@@ -22,88 +22,133 @@
 </head>
 <body>
   <!-- nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-
-      <!-- logo -->
+  <div class="d-flex align-items-center nav-container">
+    <!-- logo -->
+    <div class="logo">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.svg" alt="Snap Logo">
-      </a>
-
-      <!-- nav links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Features -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Features
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><img src="images/icon-todo.svg">Todo List</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-calendar.svg">Calendar</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-planning.svg">Planning</a></li>
-            </ul>
-          </li>
-
-          <!-- Company -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Company
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">History</a></li>
-              <li><a class="dropdown-item" href="#">Our Team</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-            </ul>
-          </li>
-
-          <!-- Careers -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Careers</a>
-          </li>
-
-          <!-- About -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>          
-        </ul>
-        <div class="d-flex">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- Login -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-
-            <!-- Register Button --> 
-            <li>
-            <button class="btn" type="button">Register</button>
-            </li>         
-          </ul>    
-        </div>
-      </div>
+      </a> 
     </div>
-  </nav> <!--nav end-->
-  Features
-  Company
-  Careers
-  About
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-width">
+      
+      <!-- hamburger icon button -->
+      <button class="hamburger">        
+        <img src="images/icon-menu.svg" class="menuIcon">
+        <img src="images/icon-close-menu.svg" class="closeIcon">
+      </button>
+      
+      <div class="container-fluid nav-width">       
 
-  Login
-  Register
+        <!-- nav links -->
+        <div class="menuOverlay desktop-menu flex-grow-1 nav-width">
+          <div class="collapse navbar-collapse nav-width nav-top" id="navbarSupportedContent">
+            <ul class="navMenu navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Features -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features              
+                    <img class="dropdown-icon" src="images/icon-arrow-down.svg">              
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-todo.svg">Todo List</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-calendar.svg">Calendar</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-planning.svg">Planning</a></li>
+                </ul>
+              </li>
 
-  Make remote work
+              <!-- Company -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                  <img class="dropdown-icon" src="images/icon-arrow-down.svg"> 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
+              </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+              <!-- Careers -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
 
-  Learn more
+              <!-- About -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>          
+            </ul>
+                      
+          </div> <!--nav links end-->
+
+          <!-- login and register -->
+          <div class="collapse navbar-collapse login-register" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+              <!-- Login -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+
+              <!-- Register Button --> 
+              <li class="register-li">
+              <button class="btn btn-outline-primary register-btn" type="button">
+                <p>
+                  Register
+                </p></button>
+              </li>         
+            </ul>    
+          </div> <!--right nav end-->
+          
+        </div> <!--overlay end-->
+      </div>  <!--nav container end-->
+    </nav> <!--nav end-->
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Cecile Stavropoulou-Chapman</a>.
-  </div>
+  <div class="d-flex main-content">
+    <div class="background-overlay"></div>
+    <div class="container-fluid d-flex justify-content-end align-items-start flex-column left-column">
+
+       <!-- hero image mobile -->
+    <div class="image-hero-mobile d-none-lg>">
+      <img src="images/image-hero-mobile.png" class="img-fluid">
+    </div>
+
+      <!-- heading -->
+      <div class="make-remote-work display-1">
+        <h1>Make remote work</h1>
+      </div>
+
+      <!-- text -->
+      <div class="text">
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+      </div>
+
+      <!-- learn more button -->
+      <div class="learn-more">
+        <button class="btn btn-primary" type="button">Learn more</button>
+      </div>
+      <!-- bottom logos -->
+      <div>
+        <img src="images/client-databiz.svg">
+        <img src="images/client-audiophile.svg">
+        <img src="images/client-meet.svg">
+        <img src="images/client-maker.svg">
+      </div>
+
+    </div>
+
+    <!-- hero image desktop -->
+    <div class="image-hero-desktop">
+      <img src="images/image-hero-desktop.png" class="img-fluid">
+    </div>
+
+  </div>  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>
